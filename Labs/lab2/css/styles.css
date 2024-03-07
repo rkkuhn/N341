@@ -1,0 +1,57 @@
+/*
+**************************************
+TITLE: Lab 2 - Catering Form
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 12 Feb 2024
+PURPOSE: This code represents an HTML page with a theme of "Event Registration."
+         The JavaScript file includes Manipulating the DOM related
+         to event Menu Page, adhering to the specified Lab 2 requirements.
+LAST MODIFIED ON:  (RKK)
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+12 Feb 2024 - Created the basic css layout of this lab. (RKK)
+16 Feb 2024 - Updated the css layout - alighed all text (headers and p) to the left side. (RKK)
+
+**************************************
+*/
+body {
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #008000; /* Green */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive; /* Using Dancing Script */
+    color: #000080; /* Navy for H1, adjusting for others as well */
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    color: #006400; /* DarkGreen */
+    margin-left: 0; /* Aligns to the left */
+}
+
+p {
+    color: #0000FF; /* Blue */
+    margin-left: 0; /* Aligns to the left */
+}
+
+/* Styles for the custom popup box */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px
+}

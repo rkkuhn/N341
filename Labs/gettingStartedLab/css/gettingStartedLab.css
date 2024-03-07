@@ -1,0 +1,48 @@
+/*
+**************************************
+TITLE: Charlies Gamming Inc Terms and Conditions Page
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 13 Jan 2024
+PURPOSE: To demonstrate skills from chapter 1 creating a simple webpage using HTML, css, and JS.
+LAST MODIFIED ON: 13 Jan 20924 (RKK)
+LAST MODIFIED BY: 13 Jan 2024 (RKK)
+MODIFICATION HISTORY:
+13 Jan 2024 - No modifications to date. Created in one code session. (RKK)
+************************************** 
+*/
+
+/* Set 1-inch margins for the body */
+body {
+    margin: 1in;
+    background-color: grey; /* Set grey background */
+    color: white; /* Set white text color */
+  }
+  
+  /* Center and make Header 1 bold */
+  h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Make Header 2 bold */
+  h2 {
+    font-weight: bold;
+  }
+  
+  /* Style for the button */
+  button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    position: fixed; /* Fix the button position */
+    bottom: 0; /* Place the button at the bottom */
+    left: 50%; /* Move the button to the center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+  }
+  
+  /* Style for the JS script box with specific src attribute */
+  [js-script-box-src="/js/gettingStartedLab.js"] {
+    background-color: white; /* Set white background for the JS script box */
+    color: black; /* Set black text color for the JS script box */
+  }
+  
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html> <!-- Specifies the document type and version of HTML -->
+<html lang="en"> <!-- Starts the HTML document and specifies the language as English -->
+
+<head> <!-- Contains meta-information about the document -->
+    <meta charset="utf-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+    <title>Blissful Celebrations</title> <!-- Specifies the title of the document shown in the browser's title bar or tab -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Links to an external CSS file for styling the document -->
+</head>
+
+<body> <!-- Contains the content of the HTML document -->
+
+    <div class="header">
+        <!-- Logo Image -->
+        <img src="../images/blissfulCelebratons1.png" alt="Blissful Celebrations Logo" style="float:left; width:200px; height:200px;">
+        <div style="margin-left: 120px;">
+            <h1>Blissful Celebrations</h1>
+            <h2>Making Your Dream Wedding and Party Come to Life</h2>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../catering/index.html">Catering</a></li>
+                <li><a href="../registrationForm/index.html">Registration</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Heading H1 for the Title -->
+    <h1>Blissful Celebration</h1> <!-- Defines the main heading of the web page -->
+    <p>5150 Carrollton Ave  Indianapolis IN 46205</p> <!-- Provides the event location -->
+    <p>Phone Number 317-555-5555</p> <!-- Provides the contact phone number -->
+
+    <!-- Image section -->
+    <section id="image-section"> <!-- Creates a section for event images -->
+        <h2>Event Images</h2> <!-- Defines a heading for the image section -->
+        <!-- Add the image -->
+        <img src="../images/nameBadge.jpg" alt="Name Badges"> <!-- Embeds an image with an alternative text -->
+    </section>
+
+    <!-- Registration form section -->
+    <section id="registration-form"> <!-- Creates a section for the registration form -->
+        <form id="registrationForm" onsubmit="return false;"> <!-- Defines the form and prevents its default submit action -->
+            <h2>Participant Information</h2> <!-- Heading for the participant information section -->
+
+            <!-- Event Date Fields -->
+            <label for="eventMonth">Event Month:</label> <!-- Label for the month selection dropdown -->
+            <select id="eventMonth" required> <!-- Dropdown for selecting the month, required to fill -->
+                <option value="" disabled selected hidden>Select Month</option> <!-- Placeholder option -->
+                <option value="January">January</option> <!-- Option for January -->
+                <!-- Add the rest of the months -->
+            </select>
+            <br> <!-- Break line for layout -->
+            <label for="eventDay">Event Day:</label> <!-- Label for the day selection dropdown -->
+            <select id="eventDay" required> <!-- Dropdown for selecting the day, required to fill -->
+                <option value="" disabled selected hidden>Select Day</option> <!-- Placeholder option -->
+                <option value="1">1</option> <!-- Option for day 1 -->
+                <!-- Add the rest of the days -->
+            </select>
+            <br> <!-- Break line for layout -->
+            <label for="eventYear">Event Year:</label> <!-- Label for the year selection dropdown -->
+            <select id="eventYear" required> <!-- Dropdown for selecting the year, required to fill -->
+                <option value="" disabled selected hidden>Select Year</option> <!-- Placeholder option -->
+                <option value="2022">2022</option> <!-- Option for year 2022 -->
+                <!-- Add the rest of the years -->
+            </select>
+            <br><br> <!-- Double break line for layout -->
+
+            <!-- Additional form fields -->
+
+            <label for="lastName">Last Name:</label> <!-- Label for the last name input field -->
+            <input type="text" id="lastName" required> <!-- Input field for the last name, required to fill -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="firstName">First Name:</label> <!-- Label for the first name input field -->
+            <input type="text" id="firstName" required> <!-- Input field for the first name, required to fill -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="address1">Address 1:</label> <!-- Label for the address line 1 input field -->
+            <input type="text" id="address1" required> <!-- Input field for address line 1, required to fill -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="address2">Address 2:</label> <!-- Label for the address line 2 input field, not required -->
+            <input type="text" id="address2"> <!-- Input field for address line 2 -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="city">City:</label> <!-- Label for the city input field -->
+            <input type="text" id="city" required> <!-- Input field for the city, required to fill -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="state">State:</label> <!-- Label for the state input field -->
+            <input type="text" id="state" required> <!-- Input field for the state, required to fill -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="zipCode">Zip Code:</label> <!-- Label for the zip code input field -->
+            <input type="text" id="zipCode" required pattern="\d{5}"> <!-- Input field for the zip code, required to fill with a pattern for 5 digits -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="phoneNumber">Phone Number:</label> <!-- Label for the phone number input field -->
+            <input type="tel" id="phoneNumber" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!-- Input field for the phone number, required to fill with a specific pattern -->
+            
+            <br> <!-- Break line for layout -->
+            
+            <label for="emailAddress">Email Address:</label> <!-- Label for the email address input field -->
+            <input type="email" id="emailAddress" required> <!-- Input field for the email address, required to fill -->
+            <span id="emailValidationMessage"></span> <!-- Span for displaying email validation message -->
+            
+            <br><br> <!-- Double break line for layout -->
+
+
+            <label for="venueType">Venue Type:</label> <!-- Label for the venue type selection dropdown -->
+            <select id="venueType" required> <!-- Dropdown for selecting the venue type, required to fill -->
+                <option value="" disabled selected hidden>Select Venue Type</option> <!-- Placeholder option -->
+                <option value="indoor">Indoor</option> <!-- Option for indoor venue -->
+                <option value="outdoor">Outdoor</option> <!-- Option for outdoor venue -->
+            </select>
+
+            <label for="eventType">Event Type:</label> <!-- Label for the event type selection dropdown -->
+            <select id="eventType" required> <!-- Dropdown for selecting the event type, required to fill -->
+                <option value="" disabled selected hidden>Select Event Type</option> <!-- Placeholder option -->
+                <option value="wedding">Wedding</option> <!-- Option for a wedding event -->
+                <option value="reception">Reception</option> <!-- Option for a reception event -->
+                <option value="corporate">Corporate Event</option> <!-- Option for a corporate event -->
+                <option value="other">Other</option> <!-- Option for any other type of event -->
+            </select>
+
+            <br><br> <!-- Double break line for layout -->
+
+            <!-- Number of People Dropdown -->
+            <label for="numberOfPeople">Number of People:</label> <!-- Label for the number of people selection dropdown -->
+            <select id="numberOfPeople" required> <!-- Dropdown for selecting the number of people attending, required to fill -->
+                <option value="" disabled selected hidden>Select Number of People</option> <!-- Placeholder option -->
+                <option value="1">1</option> <!-- Option for one person -->
+                <!-- Add the rest of the options -->
+            </select>
+
+            <br><br> <!-- Double break line for layout -->
+
+            <!-- Calculate Fee button -->
+            <button type="button" id="calculateFeeBtn">Calculate Fee</button> <!-- Button to calculate the fee, not submitting the form -->
+        </form>
+
+        <!-- Output Div Elements -->
+        <!-- ... (output div elements) ... -->
+
+        <!-- Sections to display registration details -->
+        <h2>Registration Details</h2> <!-- Heading for the registration details section -->
+        <p id="elVenueTypeOutput"></p> <!-- Paragraph to display selected venue type -->
+        <p id="elEventTypeOutput"></p> <!-- Paragraph to display selected event type -->
+
+        <!-- Section to display registration fee -->
+        <h2>Registration Fee</h2> <!-- Heading for the registration fee section -->
+        <p id="elRegistrationFeeOutput"></p> <!-- Paragraph to display calculated registration fee -->
+    </section>
+
+    <!-- Submit button section -->
+    <div> <!-- Div container for the submit button -->
+        <button type="submit">Submit</button> <!-- Submit button for the form, though it's placed outside of the form element -->
+    </div>
+
+    <!-- External JS file inclusion at the bottom -->
+    <script src="js/main.js"></script> <!-- Links to an external JavaScript file for functionality -->
+
+    <br><br>
+
+    <div class="footer">
+        <p>Blissful Celebrations © 2024. All rights reserved. 5055 Carollton Ave. Indianapolis, IN 46205   phone: 317-555-5555</p>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- 
+**************************************
+TITLE: MidTerm - Event Registration Form
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 3 March 2024
+PURPOSE: This code represents an HTML page with a theme of "Event Registration." 
+         The JavaScript file includes variables, functions, and an object related 
+         to event registration, adhering to the specified Midterm requirements. The
+         theme has the ability to go from just a registation form. It will be easy
+         to create steps with each lab to build a full Event Tracker. Currently the 
+         Calculate Fee button is fully fuctonal. The Submit button is not yet. That
+         will come with labs down the road when I want to attach other pages or a
+         database. 
+LAST MODIFIED ON:  
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+3 March 2024 - Fixed the name of the business and added the page to the mid-
+               term project. (RKK)
+
+
+************************************** -->

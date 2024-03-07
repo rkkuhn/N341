@@ -1,0 +1,93 @@
+/*
+**************************************
+TITLE: Lab 1 - Event Registration Form
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 27 Jan 2024
+PURPOSE: This code represents an HTML page with a theme of "Event Registration." 
+         The JavaScript file includes variables, functions, and an object related 
+         to event registration, adhering to the specified Lab 1 requirements. The
+         theme has the ability to go from just a registation form. It will be easy
+         to create steps with each lab to build a full Event Tracker.
+LAST MODIFIED ON:  (RKK)
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+11 Jan 2024 - (RKK)
+
+************************************** -->
+/* Apply styles to the entire body of the document */
+body {
+    background-color: #f0f8ff; /* Set the background color to AliceBlue */
+    color: #008000; /* Set the default text color to Green */
+    margin: 20px; /* Add a margin of 20 pixels on all sides of the body */
+    font-family: Arial, sans-serif; /* Use Arial or a fallback sans-serif font for the text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Set the background color */
+}
+
+.header {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox for the navbar */
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-active {
+    background-color: blue; /* Or any color you prefer */
+}
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Apply styles specifically to <h1> elements */
+h1 {
+    color: #000080; /* Set the text color to Navy */
+    font-weight: bold; /* Make the font weight bold */
+    text-align: center; /* Align the text to the center */
+}
+
+/* Apply styles to <h2>, <h3>, <h4>, <h5>, and <h6> elements */
+h2, h3, h4, h5, h6 {
+    color: #006400; /* Set the text color to DarkGreen for these heading elements */
+    font-weight: bold; /* Make the font weight bold for these elements */
+}
+
+/* Define additional styles for <img> elements */
+img {
+    display: block; /* Change display to block, enabling margin auto to work for centering */
+    margin: 0 auto; /* Apply automatic margin to left and right to center the image */
+    margin-right: 20px; /* Add a right margin of 20 pixels */
+    width: 50%; /* Set the width of the image to 50% of its container */
+}

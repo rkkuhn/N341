@@ -1,0 +1,42 @@
+/*
+**************************************
+TITLE: Lab 1 - Event Registration Form
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 27 Jan 2024
+PURPOSE: This code represents an HTML page with a theme of "Event Registration." 
+         The JavaScript file includes variables, functions, and an object related 
+         to event registration, adhering to the specified Lab 1 requirements. The
+         theme has the ability to go from just a registation form. It will be easy
+         to create steps with each lab to build a full Event Tracker.
+LAST MODIFIED ON:  (RKK)
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+11 Jan 2024 - (RKK)
+
+************************************** -->
+*/
+body {
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #008000; /* Green */
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #000080; /* Navy */
+    font-weight: bold;
+    text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #006400; /* DarkGreen */
+    font-weight: bold;
+}
+
+/* Additional styles for the image */
+img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    margin-right: 20px; /* Right margin */
+    width: 50%; /* Reduce the width by 50% */
+}

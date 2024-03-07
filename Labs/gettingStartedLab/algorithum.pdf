@@ -1,0 +1,29 @@
+Title of Project - Terms Agreement HTML, css, and JS project
+
+HTML
+
+	main
+		Enter generic text to accept the terms and conditions for Charlie Gaming Inc.
+		Add an accept button that attaches to the page tied to the JS page at the 
+		bottom
+
+
+
+
+CSS
+
+	H1 Left Bold
+	Body margin left and right 5 
+	Background color ?
+	Text color ?
+
+
+
+
+JS
+
+	Once the agree button is clicked the following will happen
+		1. A pop up box will appear
+		2. A message will display
+			"Thank you for agreeing to the terms and conditions to use out site!
+			 Please continue on to get to the main page."

@@ -1,0 +1,73 @@
+/*
+**************************************
+TITLE: Lab 3 - Main Page
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 22 Feb 2024
+PURPOSE: The code repesents the CSS layout for the main page of Lab 3.
+LAST MODIFIED ON:  (RKK)
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+22 Feb 2024 - Created the basic css layout of this lab. (RKK)
+25 Feb 2024 - Added the footer to the bottom of the page and nav bar color changes. (RKK)
+
+**************************************
+*/
+
+
+/* Body and General Styles */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Set the background color */
+}
+
+.header {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox for the navbar */
+    justify-content: center; /* Center the menu items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-active {
+    background-color: blue; /* Or any color you prefer */
+}
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

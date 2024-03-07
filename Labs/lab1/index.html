@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Charlie's Events Registration</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+
+<!-- 
+**************************************
+TITLE: Lab 1 - Event Registration Form
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 27 Jan 2024
+PURPOSE: This code represents an HTML page with a theme of "Event Registration." 
+         The JavaScript file includes variables, functions, and an object related 
+         to event registration, adhering to the specified Lab 1 requirements. The
+         theme has the ability to go from just a registation form. It will be easy
+         to create steps with each lab to build a full Event Tracker. Currently the 
+         Calculate Fee button is fully fuctonal. The Submit button is not yet. That
+         will come with labs down the road when I want to attach other pages or a
+         database. 
+LAST MODIFIED ON:  
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+28 Jan 2024 - Added a section for the Event-> Month, Day and Year. Cleaned up
+              how the fields appears on the screen. (RKK)
+30 Jan 2024 - Trying to fix the error from HTML Checker - "A charset attribut on a meta
+               element found after the first 1024 bytes." There are 4 errors and
+               all revovle around this issue. Email to get an answer but have
+               not heard back. (RKK)
+
+************************************** -->
+
+
+<body>
+
+    <!-- Heading H1 for the Title -->
+    <h1>Charlie's Events Registration</h1>
+    <p>5105 25th Ave NE, Seattle, WA 98105</p>
+    <p>Phone Number 555-555-5555</p>
+
+    <!-- Image section -->
+    <section id="image-section">
+        <h2>Event Images</h2>
+        <!-- Add the image -->
+        <img src="image/nameBadge.jpg" alt="Name Badges">
+    </section>
+
+    <!-- Registration form section -->
+    <section id="registration-form">
+        <form id="registrationForm" onsubmit="return false;">
+            <h2>Participant Information</h2>
+
+            <!-- Event Date Fields -->
+            <label for="eventMonth">Event Month:</label>
+            <select id="eventMonth" required>
+                <option value="" disabled selected hidden>Select Month</option>
+                <option value="January">January</option>
+                <!-- Add the rest of the months -->
+            </select>
+            <br>
+            <label for="eventDay">Event Day:</label>
+            <select id="eventDay" required>
+                <option value="" disabled selected hidden>Select Day</option>
+                <option value="1">1</option>
+                <!-- Add the rest of the days -->
+            </select>
+            <br>
+            <label for="eventYear">Event Year:</label>
+            <select id="eventYear" required>
+                <option value="" disabled selected hidden>Select Year</option>
+                <option value="2022">2022</option>
+                <!-- Add the rest of the years -->
+            </select>
+            <br>
+            <br>
+
+            <!-- Additional form fields -->
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            
+            <br>
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            
+            <br>
+            
+            <label for="address1">Address 1:</label>
+            <input type="text" id="address1" required>
+            
+            <br>
+            
+            <label for="address2">Address 2:</label>
+            <input type="text" id="address2">
+            
+            <br>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+            
+            <br>
+            
+            <label for="state">State:</label>
+            <input type="text" id="state" required>
+            
+            <br>
+            
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" required pattern="\d{5}">
+            
+            <br>
+            
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            
+            <br>
+            
+            <label for="emailAddress">Email Address:</label>
+            <input type="email" id="emailAddress" required>
+            <span id="emailValidationMessage"></span>
+            
+            <br>
+            <br>
+
+
+            <label for="venueType">Venue Type:</label>
+            <select id="venueType" required>
+                <option value="" disabled selected hidden>Select Venue Type</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+            </select>
+
+            <label for="eventType">Event Type:</label>
+            <select id="eventType" required>
+                <option value="" disabled selected hidden>Select Event Type</option>
+                <option value="wedding">Wedding</option>
+                <option value="reception">Reception</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br>
+            <br>
+
+            <!-- Number of People Dropdown -->
+            <label for="numberOfPeople">Number of People:</label>
+            <select id="numberOfPeople" required>
+                <option value="" disabled selected hidden>Select Number of People</option>
+                <option value="1">1</option>
+                <!-- Add the rest of the options -->
+            </select>
+
+            <br>
+            <br>
+
+            <!-- Calculate Fee button -->
+            <button type="button" id="calculateFeeBtn">Calculate Fee</button>
+        </form>
+
+        <!-- Output Div Elements -->
+        <!-- ... (output div elements) ... -->
+
+        <!-- Sections to display registration details -->
+        <h2>Registration Details</h2>
+        <p id="elVenueTypeOutput"></p>
+        <p id="elEventTypeOutput"></p>
+
+        <!-- Section to display registration fee -->
+        <h2>Registration Fee</h2>
+        <p id="elRegistrationFeeOutput"></p>
+    </section>
+
+    <!-- Submit button section -->
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+    <!-- External JS file inclusion at the bottom -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

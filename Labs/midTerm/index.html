@@ -1,0 +1,129 @@
+<!-- Notes at bottom of code inorder to pass the HTML check. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Group Services for Weddings and Parties</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Logo Image -->
+        <img src="images/blissfulCelebratons1.png" alt="Blissful Celebrations Logo" style="float:left; width:200px; height:200px;">
+        <div style="margin-left: 120px;">
+            <h1>Blissful Celebrations</h1>
+            <h2>Making Your Dream Wedding and Party Come to Life</h2>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catering/index.html">Catering</a></li>
+                <li><a href="registrationForm/index.html">Registration</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container">
+        <!-- Company Information -->
+        <section id="company-info">
+            <h2>About Us</h2>
+            <p>Blissful Celebrations is a premier event planning company specializing in creating unforgettable weddings and parties. With over a decade of experience, our team of professional event planners, designers, and coordinators are dedicated to bringing your vision to life. From intimate gatherings to grand celebrations, we manage every detail to ensure your event is seamless and memorable.</p>
+        </section>
+
+        <br>
+        <br>
+
+        <!-- Mission Statement -->
+        <section id="mission-statement">
+            <h2>Our Mission</h2>
+            <p>At Blissful Celebrations, our mission is to create extraordinary events that leave lasting impressions. We strive to exceed expectations through innovative design, meticulous planning, and flawless execution. Our goal is to make every event a unique and personalized experience that reflects our clients' visions and surpasses their dreams.</p>
+        </section>
+        
+        <br>
+        <br>
+
+        <!-- References -->
+        <section id="references">
+            <h2>References</h2>
+            <p>We take pride in our work and the relationships we've built over the years. Here are what some of our clients have to say:</p>
+            <br>
+            <ul>
+                <li>"Blissful Celebrations transformed our wedding day into something we could only dream of. Their attention to detail and professionalism were unmatched." - Jamie & Alex</li>
+                <li>"The team at Blissful Celebrations made planning our corporate event a breeze. Their creativity and organization skills are exceptional." - The Tech Company</li>
+                <li>"Our anniversary party was perfect, thanks to Blissful Celebrations. They listened to our ideas and turned them into reality." - Maria & Dan</li>
+            </ul>
+        </section>
+
+        <br>
+        <br>
+        
+        <!-- Additional Elements for Event Demonstrations -->
+        <!-- Input fields for focus/blur events -->
+        <input type="text" placeholder="Focus/Blur Event">
+        <input type="text" placeholder="Another Input for Focus/Blur">
+
+        <!-- Form for form events -->
+        <form class="form">
+            <input type="text" placeholder="Form Input">
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <!-- Form with inline onsubmit event listener for confirmation -->
+        <form class="form" onsubmit="return confirmSubmit()">
+            <input type="text" placeholder="Form Input">
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    <script>
+        // Function called by the inline onsubmit event handler
+        function confirmSubmit() {
+            const isConfirmed = confirm('You are about to leave this page. Are you sure you want to leave?');
+            return isConfirmed; // Will proceed with submission if true, otherwise cancels
+        }
+    </script>
+
+    <div class="footer">
+        <p>Blissful Celebrations © 2024. All rights reserved. 5055 Carollton Ave. Indianapolis, IN 46205   phone: 317-555-5555</p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+<!-- **************************************
+TITLE: Midterm Project - Event Main Page
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 3 March 2024
+PURPOSE: This code represents an HTML page with a theme of "Event Registration."
+            The HTML file includes a form with various input fields and a submit button.
+            This carries on the theme by adding a main page for the other labs
+            to be linked to.
+        This Lab completes all requires for Lab 3.
+LAST MODIFIED ON:
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+3 March 2024 - Created all the attachment files to tie the entire projects together.
+               Added the logo and the bottom margin with the address to the main
+               page.(RKK)
+6 March 2024 - Added the log and footer to all the other index files.
+
+************************************** -->
