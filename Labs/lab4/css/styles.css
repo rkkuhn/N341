@@ -1,0 +1,49 @@
+/*
+**************************************
+TITLE: Lab 4 - Main Page
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 20 March 2024
+PURPOSE: The code repesents the CSS layout for the main page of Lab 3.
+LAST MODIFIED ON: 
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+20 March 2024 - Created the basic css layout of this lab. (RKK)
+
+**************************************
+*/
+
+
+
+/* Styling for the main popup box */
+.popupBox {
+    position: absolute; /* Positions the popup absolutely within the body */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Ensures perfect centering by offsetting its own height and width */
+    background-color: black; /* Background color of the popup */
+    padding: 20px; /* Padding inside the popup */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+}
+
+/* Styling for the container of name boxes */
+.namesList {
+    display: flex; /* Enables flexbox layout for name boxes */
+    flex-wrap: wrap; /* Allows name boxes to wrap to next line */
+    gap: 10px; /* Spacing between name boxes */
+    margin-bottom: 20px; /* Space below the names list */
+}
+
+/* Styling for individual name boxes */
+.nameBox {
+    background-color: blue; /* Background color for name boxes */
+    color: white; /* Text color for names */
+    padding: 5px 10px; /* Padding inside name boxes */
+    cursor: pointer; /* Changes cursor to pointer to indicate clickable */
+}
+
+/* Styling for the input field and button */
+#nameInput, #addBtn {
+    margin: 5px 0; /* Margin for spacing around input and button */
+}
