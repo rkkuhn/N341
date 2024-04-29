@@ -4,46 +4,47 @@ TITLE: Lab 4 - Main Page
 AUTHOR: R Kelly Kuhn (RKK)
 CREATE DATE: 20 March 2024
 PURPOSE: The code repesents the CSS layout for the main page of Lab 3.
-LAST MODIFIED ON: 
+LAST MODIFIED ON: 4 April 2024
 LAST MODIFIED BY: (RKK)
 MODIFICATION HISTORY:
 20 March 2024 - Created the basic css layout of this lab. (RKK)
+26 March 2024 - Deleted everything I created to start over with a better plan
+                for this assignment. I am going to setup different menus for
+                customer names, image to manuplate, and new css style. (RKK)
+4-April 2024 - Added comments to every line of code. (RKK)
 
 **************************************
 */
 
-
-
-/* Styling for the main popup box */
-.popupBox {
-    position: absolute; /* Positions the popup absolutely within the body */
-    top: 50%; /* Centers vertically */
-    left: 50%; /* Centers horizontally */
-    transform: translate(-50%, -50%); /* Ensures perfect centering by offsetting its own height and width */
-    background-color: black; /* Background color of the popup */
-    padding: 20px; /* Padding inside the popup */
-    display: flex; /* Enables flexbox layout */
-    flex-direction: column; /* Stacks children vertically */
-    align-items: center; /* Centers children horizontally */
+#div1 { /* Styling for element with id "div1" */
+    margin: auto; /* Center the element horizontally */
+    text-align: center; /* Center text inside the element */
+    border: 3px black dotted; /* Set border properties */
+    font-size: 20px; /* Set font size */
+    background: green; /* Set background color */
+    height: 300px; /* Set height of the element */
+    width: 300px; /* Set width of the element */
+    position: relative; /* Set positioning to relative */
 }
 
-/* Styling for the container of name boxes */
-.namesList {
-    display: flex; /* Enables flexbox layout for name boxes */
-    flex-wrap: wrap; /* Allows name boxes to wrap to next line */
-    gap: 10px; /* Spacing between name boxes */
-    margin-bottom: 20px; /* Space below the names list */
+#div2 { /* Styling for element with id "div2" */
+    margin: auto; /* Center the element horizontally */
+    text-align: center; /* Center text inside the element */
+    border: 3px black dotted; /* Set border properties */
+    font-size: 20px; /* Set font size */
+    background: yellow; /* Set background color */
+    height: 300px; /* Set height of the element */
+    width: 300px; /* Set width of the element */
+    position: relative; /* Set positioning to relative */
 }
 
-/* Styling for individual name boxes */
-.nameBox {
-    background-color: blue; /* Background color for name boxes */
-    color: white; /* Text color for names */
-    padding: 5px 10px; /* Padding inside name boxes */
-    cursor: pointer; /* Changes cursor to pointer to indicate clickable */
-}
-
-/* Styling for the input field and button */
-#nameInput, #addBtn {
-    margin: 5px 0; /* Margin for spacing around input and button */
+#div3 { /* Styling for element with id "div3" */
+    margin: auto; /* Center the element horizontally */
+    text-align: center; /* Center text inside the element */
+    border: 3px black dotted; /* Set border properties */
+    font-size: 20px; /* Set font size */
+    background: red; /* Set background color */
+    height: 300px; /* Set height of the element */
+    width: 300px; /* Set width of the element */
+    position: relative; /* Set positioning to relative */
 }

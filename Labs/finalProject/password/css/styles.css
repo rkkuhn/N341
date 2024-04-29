@@ -1,0 +1,204 @@
+/*
+<-- **************************************
+TITLE: Lab 5 - Password Page
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 12 April 2024
+PURPOSE: This code represents an HTML page with a theme of a "password page"
+            The HTML file includes a form with various input fields, removal, 
+          
+        This Lab completes all requires for Lab 5.
+LAST MODIFIED ON: 21 April 2024
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+12 April 2024 - Created the layout page for the event menu page. Started working on 
+                the code for the HTML main page. (RKK)
+21 April 2024 - Forgot to add notes while working on the assignment. Finished cleaning
+                up code and added all comments. (RKK)                
+
+************************************** -->
+*/
+
+
+
+
+/* General styles for the entire body of the document */
+body {
+  background-color: #f0f8ff; /* Sets the body's background color to AliceBlue. */
+  color: #008000; /* Sets the default text color for the body to Green. */
+  font-family: Arial, sans-serif; /* Sets the default font family to Arial, with a fallback to sans-serif. */
+}
+
+.header {
+  background-color: #f3f3f3; /* Sets the header's background color to a light grey. */
+  text-align: center; /* Centers the text within the header. */
+  padding: 20px; /* Adds padding inside the header to create space around content. */
+}
+
+.navbar ul {
+  list-style-type: none; /* Removes bullet points from list items. */
+  padding: 0; /* Removes default padding from the list. */
+  display: flex; /* Applies a flexible box layout, useful for creating a responsive navigation bar. */
+  justify-content: center; /* Horizontally centers the flex items. */
+  align-items: center; /* Vertically centers the flex items. */
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Adds horizontal margin between list items for spacing. */
+}
+
+.navbar ul li a {
+  text-decoration: none; /* Removes the underline from links. */
+  color: #000; /* Sets the link color to black. */
+}
+
+.navbar-active {
+  background-color: blue; /* Sets the background color for the active navigation item. Can be customized. */
+}
+
+.container {
+  padding: 20px; /* Adds padding inside the container to create space around its content. */
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive; /* Sets a specific cursive font (Dancing Script) for H1 elements. */
+  color: #000080; /* Sets the color of H1 elements to Navy. */
+  /* This line is redundant and conflicts with the previous font-family declaration. */
+}
+
+h2, h3 {
+  color: #006400; /* Sets the color of H2 and H3 elements to DarkGreen. */
+  margin-left: 0; /* Ensures H2 and H3 elements align to the left, removing any default margin. */
+}
+
+p {
+  color: #0000FF; /* Sets the text color of paragraph elements to Blue. */
+  margin-left: 0; /* Aligns paragraph elements to the left. */
+}
+
+/* Styles for the custom popup box */
+.modal {
+  display: none; /* The modal is hidden by default and can be made visible with JavaScript. */
+  position: fixed; /* Fixed positioning to make the modal stay in place. */
+  z-index: 1; /* Ensures the modal sits on top of other content. */
+  left: 0;
+  top: 0;
+  width: 100%; /* Sets the modal's width to cover the full viewport width. */
+  height: 100%; /* Sets the modal's height to cover the full viewport height. */
+  overflow: auto; /* Allows scrolling within the modal if its content exceeds the viewport height. */
+  background-color: rgba(0,0,0,0.4); /* Adds a semi-transparent black background. */
+}
+
+.modal-content {
+  background-color: #fefefe; /* Sets the modal content area's background color to white. */
+  margin: 15% auto; /* Centers the modal content vertically with a margin and horizontally with auto. */
+  padding: 20px; /* Adds padding inside the modal content area. */
+  border: 1px /* This line seems incomplete and might be intended to set border properties. */
+}
+
+.section {
+  margin-bottom: 20px; /* Adds bottom margin to sections for spacing. */
+}
+
+.footer {
+  background-color: #f3f3f3; /* Sets the footer's background color to light grey. */
+  text-align: center; /* Centers the text within the footer. */
+  padding: 10px; /* Adds padding inside the footer to create space around content. */
+  position: fixed; /* Fixes the footer's position to make it always visible at the bottom. */
+  bottom: 0;
+  width: 100%; /* Ensures the footer spans the full width of the viewport. */
+}
+
+
+/* Styles specific to the main container wrapping content */
+.container {
+  max-width: 600px; /* Limits the maximum width of the container to 600px */
+  margin: 0 auto; /* Centers the container horizontally within its parent element */
+  padding: 20px; /* Adds 20px padding inside the container on all sides */
+  text-align: center; /* Centers the text inside the container */
+}
+
+/* Styling for the container that holds tabbed interfaces */
+.tab-container {
+  padding: 20px; /* Adds 20px padding inside the tab container */
+  border: 1px solid #ccc; /* Adds a light grey border around the tab container */
+  border-radius: 5px; /* Rounds the corners of the tab container */
+  background-color: #f9f9f9; /* Sets a light grey background color for the tab container */
+}
+
+/* Styling for the tab headers */
+.tabs {
+  list-style-type: none; /* Removes bullet points from the list */
+  padding: 0; /* Removes padding from the list */
+  overflow: hidden; /* Ensures no content spills out */
+  background-color: #f1f1f1; /* Sets a very light grey background color for the tabs */
+}
+
+/* Styling for each tab link */
+.tabs .tab-link {
+  float: left; /* Floats each tab link to the left side */
+  padding: 10px; /* Adds padding inside each tab link */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate clickable items */
+  border: 1px solid #ccc; /* Adds a light grey border around each tab link */
+  margin-right: 5px; /* Adds a 5px right margin to each tab link */
+}
+
+/* Styling for a tab link when it is hovered over */
+.tabs .tab-link:hover {
+  background-color: #ddd; /* Changes the background color to a darker grey when hovered */
+}
+
+/* Styling for the currently active tab link */
+.tabs .current {
+  background-color: #fff; /* Sets the background color of the active tab to white */
+  border-bottom: none; /* Removes the bottom border to merge with the content area */
+}
+
+/* Styling for the content sections of each tab */
+.tab-content {
+  display: none; /* Hides all tab content by default */
+  padding: 15px; /* Adds padding inside each tab content area */
+  border: 1px solid #ccc; /* Adds a light grey border around the content area */
+}
+
+/* Styling for the currently active tab content */
+.tab-content.current {
+  display: block; /* Displays the content of the currently active tab */
+}
+
+/* General styling for all input fields */
+input {
+  width: 100%; /* Sets the width of input fields to fill their container */
+  padding: 10px; /* Adds 10px padding inside input fields */
+  margin-bottom: 20px; /* Adds a 20px bottom margin to space out inputs */
+}
+
+/* General styling for buttons */
+button {
+  width: 100%; /* Sets button width to fill their container */
+  padding: 10px; /* Adds 10px padding inside buttons */
+  background-color: #007bff; /* Sets the background color to a blue shade */
+  color: #fff; /* Sets the text color inside the button to white */
+  border: none; /* Removes the border from the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
+/* Styling for displaying error messages */
+.error-message {
+  color: red; /* Sets the text color of error messages to red */
+}
+
+/* Styling for the password strength indicator */
+.password-strength {
+  font-weight: bold; /* Sets the font weight of the password strength text to bold */
+}
+
+/* Body and General Styles */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+

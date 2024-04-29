@@ -1,0 +1,88 @@
+/* General styles for the entire body of the document */
+body {
+  font-family: Arial, sans-serif; /* Sets the default font to Arial, a sans-serif font */
+  background-color: #f0f8ff; /* Sets a light blue background color for the entire page */
+}
+
+/* Styles specific to the main container wrapping content */
+.container {
+  max-width: 600px; /* Limits the maximum width of the container to 600px */
+  margin: 0 auto; /* Centers the container horizontally within its parent element */
+  padding: 20px; /* Adds 20px padding inside the container on all sides */
+  text-align: center; /* Centers the text inside the container */
+}
+
+/* Styling for the container that holds tabbed interfaces */
+.tab-container {
+  padding: 20px; /* Adds 20px padding inside the tab container */
+  border: 1px solid #ccc; /* Adds a light grey border around the tab container */
+  border-radius: 5px; /* Rounds the corners of the tab container */
+  background-color: #f9f9f9; /* Sets a light grey background color for the tab container */
+}
+
+/* Styling for the tab headers */
+.tabs {
+  list-style-type: none; /* Removes bullet points from the list */
+  padding: 0; /* Removes padding from the list */
+  overflow: hidden; /* Ensures no content spills out */
+  background-color: #f1f1f1; /* Sets a very light grey background color for the tabs */
+}
+
+/* Styling for each tab link */
+.tabs .tab-link {
+  float: left; /* Floats each tab link to the left side */
+  padding: 10px; /* Adds padding inside each tab link */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate clickable items */
+  border: 1px solid #ccc; /* Adds a light grey border around each tab link */
+  margin-right: 5px; /* Adds a 5px right margin to each tab link */
+}
+
+/* Styling for a tab link when it is hovered over */
+.tabs .tab-link:hover {
+  background-color: #ddd; /* Changes the background color to a darker grey when hovered */
+}
+
+/* Styling for the currently active tab link */
+.tabs .current {
+  background-color: #fff; /* Sets the background color of the active tab to white */
+  border-bottom: none; /* Removes the bottom border to merge with the content area */
+}
+
+/* Styling for the content sections of each tab */
+.tab-content {
+  display: none; /* Hides all tab content by default */
+  padding: 15px; /* Adds padding inside each tab content area */
+  border: 1px solid #ccc; /* Adds a light grey border around the content area */
+}
+
+/* Styling for the currently active tab content */
+.tab-content.current {
+  display: block; /* Displays the content of the currently active tab */
+}
+
+/* General styling for all input fields */
+input {
+  width: 100%; /* Sets the width of input fields to fill their container */
+  padding: 10px; /* Adds 10px padding inside input fields */
+  margin-bottom: 20px; /* Adds a 20px bottom margin to space out inputs */
+}
+
+/* General styling for buttons */
+button {
+  width: 100%; /* Sets button width to fill their container */
+  padding: 10px; /* Adds 10px padding inside buttons */
+  background-color: #007bff; /* Sets the background color to a blue shade */
+  color: #fff; /* Sets the text color inside the button to white */
+  border: none; /* Removes the border from the button */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}
+
+/* Styling for displaying error messages */
+.error-message {
+  color: red; /* Sets the text color of error messages to red */
+}
+
+/* Styling for the password strength indicator */
+.password-strength {
+  font-weight: bold; /* Sets the font weight of the password strength text to bold */
+}

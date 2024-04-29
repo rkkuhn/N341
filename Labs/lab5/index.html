@@ -1,0 +1,81 @@
+<!-- Notes at bottom of code in order to pass the HTML check. -->
+
+
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en"> <!-- Starts the HTML document with English as the language -->
+<head> <!-- Contains meta-information about the document -->
+  <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the webpage responsive by setting the viewport width and initial scale -->
+  <title>Login Form</title> <!-- Title of the webpage shown in the browser tab -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- Links to the external CSS file for styling -->
+</head>
+<body> <!-- Contains the content of the webpage -->
+  <div class="container"> <!-- A container that centers the content and applies specific styling -->
+    <h1>Login Form Prototype</h1> <!-- Main heading of the webpage -->
+
+    <div class="tab-container"> <!-- Container for tabs functionality, allowing content switching without page reload -->
+        <ul class="tabs"> <!-- Unordered list for tab headers -->
+            <li class="tab-link current" data-tab="LoginForm">Login</li> <!-- List item for the Login tab, marked as currently active -->
+            <li class="tab-link" data-tab="LoginOut">Logout</li> <!-- List item for the Logout tab -->
+        </ul>
+        <div id="LoginForm" class="tab-content current"> <!-- Div for the content of the Login tab, marked as currently visible -->
+            <form id="loginForm"> <!-- Form element with ID for identification in scripts -->
+                <input type="email" id="email" placeholder="Enter your email"> <!-- Input field for email -->
+                <input type="password" id="password" placeholder="Enter your password"> <!-- Input field for password -->
+                <div id="passwordStrength" class="password-strength"></div> <!-- Div for displaying password strength dynamically -->
+                <input type="tel" id="telephone" placeholder="Enter your telephone"> <!-- Input field for telephone number -->
+                <input type="text" id="text" placeholder="Enter Your Favorite Food"> <!-- Input field for additional text -->
+                <br><br>
+                <div>
+                  <h2>Do you agree to the Terms and Conditions?</h2> <!-- Heading asking for agreement to terms and conditions -->
+                  <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1"> <!-- Checkbox for "Yes" -->
+                  <label for="checkbox1">Yes</label><br>
+                  <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2"> <!-- Checkbox for "No" -->
+                  <label for="checkbox2">No</label><br>
+                </div>
+                <br><br>
+                <div>
+                  <h2>Male or Female</h2> <!-- Heading for gender selection -->
+                  <input type="radio" id="radio1" name="radio" value="radio1"> <!-- Radio button for Male -->
+                  <label for="radio1">Male</label><br>
+                  <input type="radio" id="radio2" name="radio" value="radio2"> <!-- Radio button for Female -->
+                  <label for="radio2">Female</label><br>
+                </div>
+                <br><br>
+                <div>
+                  <h2>Select Your Birthday</h2> <!-- Heading for selecting birthday -->
+                  <input type="date" id="date" name="date"> <!-- Date picker for birthday -->
+                </div>
+                <br><br>
+                <button type="submit">Login</button> <!-- Button to submit the form -->
+                <div id="error" class="error-message"></div> <!-- Div for displaying error messages -->
+            </form>
+        </div>
+    </div>
+    <button id="clickMeButton">Reset Webpage</button> <!-- Button to reset the webpage -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> <!-- Includes jQuery library from CDN -->
+  </script>
+  <script src="js/script.js"></script> <!-- Includes external JavaScript file for additional scripting -->
+</body>
+</html>
+
+
+
+<!-- **************************************
+TITLE: Lab 5 - Password Page
+AUTHOR: R Kelly Kuhn (RKK)
+CREATE DATE: 12 April 2024
+PURPOSE: This code represents an HTML page with a theme of a "password page"
+            The HTML file includes a form with various input fields, removal, 
+          
+        This Lab completes all requires for Lab 5.
+LAST MODIFIED ON: 21 April 2024
+LAST MODIFIED BY: (RKK)
+MODIFICATION HISTORY:
+12 April 2024 - Created the layout page for the event menu page. Started working on 
+                the code for the HTML main page. (RKK)
+21 April 2024 - Forgot to add notes while working on the assignment. Finished cleaning
+                up code and added all comments. (RKK)                
+
+************************************** -->
